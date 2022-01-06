@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AddTodoForm from './AddTodoForm';
-import './App.css';
+
 import TodoList from './TodoList';
 
 const initialTodos: Todo[] = [
@@ -37,6 +37,9 @@ function App() {
 
   return (
     <div>
+      <h1 className="text-3xl font-bold underline underline-offset-1">
+        TODO!
+      </h1>
       <TodoList todos={todos} toggleTodo={toggleTodo}/>
       <AddTodoForm addTodo={addTodo}/>
     </div>
